@@ -1,0 +1,24 @@
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-bg: #211A2E;
+        --color-fg: #F5F0FF;
+        --color-surface: #30263F;
+        --color-border: #8B7FA3;
+        --color-primary: #7C3AED;
+        --color-danger: #FF8FA3;
+        --color-focus: #C4B5FD;
+        --shadow-1: 0 1px 3px rgba(0, 0, 0, 0.45);
+    }
+}
+
+/* Manual dark-mode toggle tanpa JavaScript */
+:root:has(#tema:checked) {
+    --color-bg: #211A2E;
+    --color-fg: #F5F0FF;
+    --color-surface: #30263F;
+    --color-border: #8B7FA3;
+    --color-primary: #7C3AED;
+    --color-danger: #FF8FA3;
+    --color-focus: #C4B5FD;
+    --shadow-1: 0 1px 3px rgba(0, 0, 0, 0.45);
+}

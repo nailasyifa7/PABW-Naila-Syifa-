@@ -1,0 +1,47 @@
+/* LAPIS 1 — Primitive tokens
+*/
+:root {
+  /* Warna */
+  --purple-700: #6D28D9;
+  --purple-500: #8B5CF6;
+
+  --slate-50: #F5F3FF;
+  --slate-900: #1E1B4B;
+
+  --white: #FAF5FF;
+  --red-700: #DC2626;
+
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+
+  
+  --radius-md: 0.5rem;
+  --radius-full: 999px;
+
+  --shadow-1: 0 1px 3px rgba(30, 27, 75, 0.15);
+
+  --text-sm: 0.875rem;
+  --text-md: 1rem;
+  --text-xl: 1.5rem;
+  --text-3xl: 2.25rem;
+}
+
+
+/* LAPIS 2 — Semantic tokens
+:root {
+  --color-bg: var(--slate-50);
+  --color-fg: var(--slate-900);
+  --color-surface: var(--white);
+  --color-border: #A78BFA;
+
+  --color-primary: var(--purple-700);
+  --color-danger: var(--red-700);
+  --color-focus: var(--purple-500);
+
+  --card-pad: var(--space-4);
+  --section-gap: var(--space-6);
+}

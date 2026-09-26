@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mie Goreng Saya</title>
+
+  <link rel="stylesheet" href="tokens.css">
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="layout.css">
+  <link rel="stylesheet" href="komponen.css">
+  <link rel="stylesheet" href="tema.css">
+</head>
+
+<body>
+  <header>
+    <div class="header-baris">
+      <h1>Mie Goreng Saya</h1>
+
+      <nav aria-label="Navigasi utama">
+        <ul>
+          <li><a href="#daftarmiegoreng-1">Daftar Mie Goreng</a></li>
+          <li><a href="#tambahanmenu-2">Tambahan Menu</a></li>
+          <li><a href="#tentangsaya-3">Tentang Saya</a></li>
+        </ul>
+      </nav>
+
+      <div class="pengalih-tema-wrapper">
+        <input type="checkbox" id="tema" class="pengalih-tema">
+        <label for="tema" class="tombol-tema">Tema gelap</label>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="daftarmiegoreng-1">
+      <h2>Daftar Bahan</h2>
+
+      <div class="tabel-wrapper">
+        <table>
+          <caption>Daftar mie goreng</caption>
+          <thead>
+            <tr>
+              <th scope="col">Nama mie goreng</th>
+              <th scope="col">Bahan utama</th>
+              <th scope="col">Harga</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Mie goreng biasa</th>
+              <td>Telur</td>
+              <td>10.000</td>
+            </tr>
+            <tr>
+              <th scope="row">Mie goreng spesial</th>
+              <td>Sosis, telur, bakso</td>
+              <td>15.000</td>
+            </tr>
+            <tr>
+              <th scope="row">Mie goreng seafood</th>
+              <td>Udang, cumi, telur, kepiting</td>
+              <td>30.000</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <figure>
+        <img src="mie.jpg" alt="Mie goreng" width="300" height="360" loading="lazy">
+        <figcaption>Contoh mie goreng</figcaption>
+      </figure>
+    </section>
+
+    <section id="tambahanmenu-2">
+      <h2>Tambahan Menu</h2>
+
+      <form action="#" method="post">
+        <div class="form-kolom">
+          <label for="nama-mie-goreng">Nama mie goreng:</label>
+          <input
+            type="text"
+            id="nama-mie-goreng"
+            name="nama_mie_goreng"
+            required
+            minlength="3"
+          >
+          <p class="pesan-galat">Nama mie goreng wajib diisi.</p>
+        </div>
+
+        <div class="form-kolom">
+          <label for="bahan-utama">Bahan utama:</label>
+          <input
+            type="text"
+            id="bahan-utama"
+            name="bahan_utama"
+            required
+            minlength="3"
+          >
+          <p class="pesan-galat">Bahan utama wajib diisi.</p>
+        </div>
+
+        <div class="form-kolom">
+          <label for="harga">Harga:</label>
+          <input
+            type="text"
+            id="harga"
+            name="harga"
+            required
+            pattern="[0-9.]+"
+          >
+          <p class="pesan-galat">Harga wajib diisi menggunakan angka.</p>
+        </div>
+
+        <button type="submit">Simpan</button>
+      </form>
+    </section>
+
+    <section id="tentangsaya-3">
+      <h2>Tentang Saya</h2>
+      <p>Halaman ini berisi daftar mie goreng dan menu tambahan yang saya buat.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Naila Syifa Wiharningtyas, NIM: 25523193, 2026</p>
+  </footer>
+</body>
+</html>
