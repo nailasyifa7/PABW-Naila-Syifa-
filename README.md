@@ -1,5 +1,32 @@
 # PABW-Naila-Syifa-25523193
 
+## Pertemuan 5 — Layout Modern: Flexbox dan Grid
+
+Topik halaman tetap **Mie Goreng Saya**, melanjutkan halaman Pertemuan 4.
+
+### Perubahan P5
+- Kerangka halaman memakai Grid: tiga baris `auto 1fr auto`.
+- Area isi memakai Grid dua kolom: `16rem 1fr`.
+- Navbar memakai Flex.
+- Menu samping memakai Flex dalam arah kolom.
+- Galeri memakai Grid `repeat(auto-fit, minmax(16rem, 1fr))` tanpa media query khusus galeri.
+- Isi kartu memakai Flex pada bagian kaki kartu.
+- Dua blok memakai penempatan `span`.
+- Isi panjang ditangani dengan `min-width: 0` dan `overflow-wrap: anywhere`.
+- Pengujian dilakukan pada target lebar 360 px dan 1.280 px.
+
+### Urutan CSS
+1. `tokens.css`
+2. `base.css`
+3. `layout.css`
+4. `komponen.css`
+5. `tema.css`
+
+### Catatan
+Konten utama, warna, dan design token dari Pertemuan 4 dipertahankan. Struktur HTML diberi kelas/wrapper yang diperlukan agar target layout pada Worksheet P5 dapat diterapkan.
+
+
+
 ## Pertemuan 4 — Design token halaman profil
  
 - Berkas gaya yang akan dibuat: tokens.css, base.css,
