@@ -1,0 +1,41 @@
+/* Worksheet P6 — Responsif Mobile-First
+   Gaya dasar (layar sempit) di atas, titik henti min-width di bawah. */
+
+/* ===== Dasar: berlaku di semua lebar, satu kolom ===== */
+.isi {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-6);
+}
+
+.galeri {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
+}
+
+/* ===== Tablet: galeri dua kolom ===== */
+@media (min-width: 48rem) {
+  .galeri {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sorotan {
+    grid-column: span 2;
+  }
+
+  .papan {
+    grid-row: span 2;
+  }
+}
+
+/* ===== Desktop: sidebar bersanding dengan konten ===== */
+@media (min-width: 60rem) {
+  .isi {
+    grid-template-columns: 16rem 1fr;
+  }
+
+  .galeri {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

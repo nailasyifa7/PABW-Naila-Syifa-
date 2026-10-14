@@ -1,0 +1,119 @@
+/* Worksheet P5 — komponen.css
+   P6: kolom .galeri dipindah ke responsif.css */
+
+.galeri {
+  display: grid;
+  min-width: 0;
+  overflow-x: auto;
+  gap: var(--space-4);
+}
+
+.kartu {
+  display: grid;
+  align-content: start;
+  min-height: 14rem;
+  min-width: 0;
+  gap: var(--space-4);
+  padding: var(--card-pad);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-1);
+}
+
+.kartu__isi {
+  min-width: 0;
+}
+
+.kartu__judul {
+  overflow-wrap: anywhere;
+}
+
+.kartu__kaki {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+}
+
+.form-kolom {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  min-width: 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+label {
+  font-size: var(--text-sm);
+  font-weight: 600;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  min-width: 0;
+  padding: var(--space-2) var(--space-3);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  color: var(--color-fg);
+}
+
+button {
+  align-self: flex-start;
+  padding: var(--space-2) var(--space-4);
+  border: 1px solid transparent;
+  border-radius: var(--radius-md);
+  background: var(--color-primary);
+  color: var(--color-surface);
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-focus);
+  outline-offset: 2px;
+}
+
+input:user-invalid {
+  border-color: var(--color-danger);
+  border-width: 2px;
+}
+
+.pesan-galat {
+  display: none;
+  color: var(--color-danger);
+  font-size: var(--text-sm);
+}
+
+.form-kolom:has(input:user-invalid) .pesan-galat {
+  display: block;
+}
+
+.tombol-tema {
+  display: inline-block;
+  padding: var(--space-2) var(--space-3);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  font-size: var(--text-sm);
+}
+
+.pengalih-tema {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  opacity: 0;
+  pointer-events: none;
+}
