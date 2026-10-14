@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="judul-halaman">Mie Goreng Saya</title>
+
+
+  <link rel="stylesheet" href="tokens.css">
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="layout.css">
+  <link rel="stylesheet" href="komponen.css">
+  <link rel="stylesheet" href="tema.css">
+  <link rel="stylesheet" href="responsif.css">
+</head>
+
+<body>
+  <div class="page">
+    <header class="navbar">
+      <div class="header-baris">
+        <h1 id="nama-halaman">Mie Goreng Saya</h1>
+
+        <nav aria-label="Navigasi utama">
+          <ul id="navigasi-utama"></ul>
+        </nav>
+
+        <div class="pengalih-tema-wrapper">
+          <input type="checkbox" id="tema" class="pengalih-tema">
+          <label for="tema" class="tombol-tema">Tema gelap</label>
+        </div>
+      </div>
+    </header>
+
+    <div class="isi">
+      <aside class="sisi">
+        <h2>Menu</h2>
+        <nav aria-label="Menu samping">
+          <ul id="menu-samping" class="menu-samping"></ul>
+        </nav>
+      </aside>
+
+      <main class="utama">
+        <section id="daftarmiegoreng-1">
+          <h2>Daftar Bahan</h2>
+
+          <div class="galeri">
+            <article class="kartu sorotan">
+              <div class="kartu__isi">
+                <h3 id="judul-daftar-mie">Daftar mie goreng</h3>
+                <div class="tabel-wrapper">
+                  <table>
+                    <caption>Daftar mie goreng</caption>
+                    <thead>
+                      <tr>
+                        <th scope="col">Nama mie goreng</th>
+                        <th scope="col">Bahan utama</th>
+                        <th scope="col">Harga</th>
+                      </tr>
+                    </thead>
+                    <tbody id="tabel-menu"></tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="kartu__kaki">
+                <span>Daftar mie goreng</span>
+                <span id="jumlah-menu">3 menu</span>
+              </div>
+            </article>
+
+            <article class="kartu papan">
+              <div class="kartu__isi">
+                <h3>Contoh mie goreng</h3>
+                <figure>
+                  <img src="mie.jpg" alt="Mie goreng" width="300" height="360" loading="lazy">
+                  <figcaption id="keterangan-foto">Contoh mie goreng</figcaption>
+                </figure>
+              </div>
+              <div class="kartu__kaki">
+                <span>Mie goreng</span>
+                <span>Foto</span>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section id="tambahanmenu-2" class="kartu">
+          <div class="kartu__isi">
+            <h2>Tambahan Menu</h2>
+
+            <form action="#" method="post" id="form-menu">
+              <div class="form-kolom">
+                <label for="nama-mie-goreng">Nama mie goreng:</label>
+                <input
+                  type="text"
+                  id="nama-mie-goreng"
+                  name="nama_mie_goreng"
+                  required
+                  minlength="3"
+                >
+                <p class="pesan-galat">Nama mie goreng wajib diisi.</p>
+              </div>
+
+              <div class="form-kolom">
+                <label for="bahan-utama">Bahan utama:</label>
+                <input
+                  type="text"
+                  id="bahan-utama"
+                  name="bahan_utama"
+                  required
+                  minlength="3"
+                >
+                <p class="pesan-galat">Bahan utama wajib diisi.</p>
+              </div>
+
+              <div class="form-kolom">
+                <label for="harga">Harga:</label>
+                <input
+                  type="text"
+                  id="harga"
+                  name="harga"
+                  required
+                  pattern="[0-9.]+"
+                >
+                <p class="pesan-galat">Harga wajib diisi menggunakan angka.</p>
+              </div>
+
+              <button type="submit">Simpan</button>
+            </form>
+          </div>
+          <div class="kartu__kaki">
+            <span>Form menu</span>
+            <span>Evaluasi input</span>
+          </div>
+        </section>
+
+        <section id="proyek-p9" class="kartu">
+          <div class="kartu__isi">
+            <h2>Proyek Saya</h2>
+            <div id="filter" aria-label="Filter kategori proyek">
+              <button type="button" data-kategori="semua" class="aktif">Semua</button>
+              <button type="button" data-kategori="web">Web</button>
+              <button type="button" data-kategori="data">Data</button>
+            </div>
+            <ul id="daftar" class="daftar-proyek"></ul>
+            <p id="pesan-kosong" hidden>Tidak ada proyek pada kategori itu.</p>
+          </div>
+        </section>
+
+        <section id="tentangsaya-3" class="kartu">
+          <div class="kartu__isi">
+            <h2>Tentang Saya</h2>
+            <p id="tentang-saya"></p>
+          </div>
+          <div class="kartu__kaki">
+            <span id="nama-footer"></span>
+            <span id="peran-footer">Profil</span>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    
+<p id="pesan-api" role="status"></p>
+
+    <footer>
+      <p id="identitas-footer"></p>
+    </footer>
+  </div>
+  <script type="module" src="js/app.js"></script>
+  <script type="module" src="js/dom.js"></script>
+</body>
+</html>
