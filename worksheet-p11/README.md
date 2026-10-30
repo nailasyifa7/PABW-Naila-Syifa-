@@ -17,8 +17,4 @@ Proyek ini melanjutkan halaman profil P9. Lima modul wajib P11 dipisahkan berdas
 - `js/app.js`: perakit yang mengimpor modul dan memulai aplikasi.
 - `js/api.js`: berkas tambahan dari P10, dipertahankan terpisah dan bukan salah satu dari lima modul wajib.
 
-## Catatan penyimpanan
-Yang disimpan hanya kategori aktif (`kategoriAktif`) dan nilai bawaan urutan tampilan (`urutanTampilan`). Token, kata sandi, dan data pribadi tidak disimpan. Jika JSON rusak atau versi skema tidak cocok, simpanan dibuang dan nilai bawaan digunakan.
 
-## Deklarasi bantuan AI
-AI membantu menyusun pemisahan modul, penanganan `localStorage`, dan dokumentasi berdasarkan worksheet P11. Pemilik proyek tetap perlu membaca kode, menguji perilaku di browser, dan menyesuaikan catatan worksheet berdasarkan hasil pengujian yang benar-benar terlihat.
